@@ -1,8 +1,14 @@
+public class Main{
+    public static void main(String[] args) {
+        EmailDirector director=new EmailDirector();
 
-void main() {
-    IO.println(String.format("Hello and welcome!"));
+        EmailObjectBuilder objbuilder=new EmailObjectBuilder();
+        director.makeWelcomeEmail(objbuilder);
+        Email welcomeEmail=objbuilder.getResult();
 
-    for (int i = 1; i <= 5; i++) {
-        IO.println("i = " + i);
+        EmailPreviewBuilder previewbuilder=new EmailPreviewBuilder();
+        director.makeWelcomeEmail(previewbuilder);
+        String emailPreview=previewbuilder.getResult();
+        System.out.println(emailPreview);
     }
 }
