@@ -1,5 +1,5 @@
 package email.example;
-
+//Director
 public class EmailDirector {
     public void makeWelcomeEmail(EmailBuilder e){
         e.setRecipient("linna@email.com").setSubject("Welcome to the email sender!").setBody("Hi!Thanks for registering.").setIsHtml(true);
