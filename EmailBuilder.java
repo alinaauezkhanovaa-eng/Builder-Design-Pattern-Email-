@@ -1,5 +1,5 @@
 package email.example;
-
+//Builder
 public interface EmailBuilder {
     EmailBuilder setRecipient(String recipient);
     EmailBuilder setSubject(String subject);
