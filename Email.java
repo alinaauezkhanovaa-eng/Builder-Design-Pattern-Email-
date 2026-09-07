@@ -1,5 +1,5 @@
 package email.example;
-
+//Product
 public class Email {
     private final String  recipient,subject,body;
     private final boolean isHtml;
