@@ -1,5 +1,5 @@
 package email.example;
-
+//Concrete Builder #2
 public class EmailPreviewBuilder implements EmailBuilder{
     private final StringBuilder sb =new StringBuilder("===OUTGOING EMAIL PREVIEW===\n");
     public EmailPreviewBuilder setRecipient(String recipient){sb.append("To:").append(recipient).append("\n");return this;}
