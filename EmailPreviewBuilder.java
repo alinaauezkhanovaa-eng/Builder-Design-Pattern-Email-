@@ -3,7 +3,7 @@ package email.example;
 public class EmailPreviewBuilder implements EmailBuilder{
     private final StringBuilder sb =new StringBuilder("===OUTGOING EMAIL PREVIEW===\n");
     public EmailPreviewBuilder setRecipient(String recipient){sb.append("To:").append(recipient).append("\n");return this;}
-    public EmailPreviewBuilder setSubject(String subject_){
+    public EmailPreviewBuilder setSubject(String subject){
         sb.append("Subject:").append(subject).append("\n");return this;
     }
     public EmailPreviewBuilder setBody(String body){
