@@ -1,5 +1,5 @@
 package email.example;
-
+//Concrete Builder #1
 public class EmailObjectBuilder implements EmailBuilder{
     private String recipient,subject,body;
     private boolean isHtml;
