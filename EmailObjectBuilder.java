@@ -9,7 +9,7 @@ public class EmailObjectBuilder implements EmailBuilder{
     public EmailObjectBuilder setIsHtml(boolean isHtml){this.isHtml=isHtml;return this;}
     public Email getResult(){
         if (recipient==null || ! recipient.contains("@")){
-            throw new IllegalArgumentException("Valid recipient email's required");
+            throw new IllegalArgumentException("It requires a real email address!");
         }
         if (subject==null || subject.isEmpty()){
             throw new IllegalStateException("Email subject can't be empty");
